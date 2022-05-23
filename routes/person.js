@@ -13,7 +13,7 @@ const {
   searchQuery,
 } = require("../controllers/person");
 
-//@important : u may have to comment few routers to make other work specially the puts
+//@important !!! u may have to comment few routers to make other work specially the puts
 
 //10. create routers
 const personRouter = express.Router();

@@ -1,5 +1,6 @@
 //4. resuire mongoose for the DB connexion
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const connectDB = async () => {
   try {

@@ -1,5 +1,6 @@
 //1. require express package for the server
 const express = require("express");
+require("dotenv").config();
 //require local modules
 const connectDB = require("./config/connectDB");
 const listener = require("./controllers/listener");
