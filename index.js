@@ -1,6 +1,7 @@
+require("dotenv").config();
 //1. require express package for the server
 const express = require("express");
-require("dotenv").config();
+
 //require local modules
 const connectDB = require("./config/connectDB");
 const listener = require("./controllers/listener");
@@ -19,5 +20,5 @@ app.use(express.json());
 app.use("/api/people", personRouter);
 
 //3.listen to our server on port
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.listen(port, (err) => listener(err, port));

@@ -1,4 +1,4 @@
-//@descriinside this file we're gonna create all our controllers functions
+//@description inside this file we're gonna create all our controllers functions
 
 // import our person schema
 const personSchema = require("../models/person");
